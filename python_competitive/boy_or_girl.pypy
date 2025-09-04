@@ -1,0 +1,8 @@
+# https://codeforces.com/problemset/problem/236/A
+
+username = input()
+
+username_set = set(username)
+
+answer = 'CHAT WITH HER!' if len(username_set) % 2 == 0 else 'IGNORE HIM!'
+print(answer)
