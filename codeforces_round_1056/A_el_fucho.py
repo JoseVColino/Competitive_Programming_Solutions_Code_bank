@@ -1,3 +1,4 @@
+# https://codeforces.com/contest/2155/problem/A
 from math import log2,ceil
 
 test = int(input())
