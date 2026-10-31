@@ -34,8 +34,6 @@ int lengthOfLongestSubstring(string s) {
 
 int main(){
 
-    string s;
-    cin >> s;
-    cout << lengthOfLongestSubstring(s);
+    cout << (bool) '0' << (bool) '1';
     return 0;
 }
