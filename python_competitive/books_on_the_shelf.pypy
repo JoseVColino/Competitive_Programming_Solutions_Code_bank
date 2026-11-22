@@ -1,0 +1,29 @@
+t = int(input())
+
+for _ in range(t):
+    n = int(input())
+    v = map(int,input().split())
+    freq = {}
+    for e in v:
+        if e not in freq:
+            freq[e]=1
+        else:
+            freq[e]+=1
+
+    seen = 0
+    for v in freq.values():
+        if v <=2:
+            seen+=v
+        else:
+            seen+=2
+
+    nums = sorted(freq)
+    rest = []
+    print(seen)
+    for num in nums:
+        if freq[num] > 1:
+            print(" ".join([str(num)]*(freq[num]-1)), end=' ')
+        rest.append(num)
+
+
+    print(" ".join(map(str,reversed(rest))))
